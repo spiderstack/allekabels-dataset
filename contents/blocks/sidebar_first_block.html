@@ -1,7 +1,21 @@
-{{block class="Smartwave\PortoChild\Block\CategoryCollection" name="category_sidebar"
+{{block class="Smartwave\PortoChild\Block\CategoryCollection"
+name="category_sidebar"
 template="Smartwave_Porto::category_side.phtml"}}
 <a class="banner"
   href='{{block class="Magento\Framework\View\Element\Template" template="Smartwave_Porto::category_url.phtml" category_id="19"}}'>
   <img src='{{view url="images/assets/en/clearance.jpg"}}' />
   <div class="cta">View now</div>
 </a>
+<div class="mt-4">
+  {{block class="Smartwave\PortoChild\Block\LatestList"
+  name="featured_product"
+  title="Latest Products"
+  product_count="5"
+  column_count="1"
+  title="Latest Products"
+  aspect_ratio="0"
+  image_width="150"
+  image_height="150"
+  template="Smartwave_Filterproducts::featured_products.phtml"
+  }}
+</div>
